@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+</head>
+<body>
+{% block extrahead %}
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+{% endblock extrahead %}
+</body>
+</html>
