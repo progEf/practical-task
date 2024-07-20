@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Search.views import ProductList, HomePage
+from Search.views import ProductList, HomePage, CitySearchWeather
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', ProductList.as_view(), name='product-list'),
+    path('citySearch/', CitySearchWeather.as_view()),
     path('', HomePage.as_view())
 ]
 

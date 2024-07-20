@@ -5,4 +5,4 @@ from Search.models import City
 class CitySerializer(serializers.ModelSerializer):
     class Meta:
         model = City
-        fields = ['id', 'name', 'subject', 'lat', 'lon']
+        fields = '__all__'
