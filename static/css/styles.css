@@ -1,0 +1,47 @@
+
+body {
+
+    background: #0f2027; /* fallback for old browsers */
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+}
+
+#find-city {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+#suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1.5rem 4rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+    border-radius: 0.2rem;
+    width: 80%;
+    /*
+    column-count: 2;
+
+     */
+    max-height: 150px; /* Устанавливаем максимальную высоту блока */
+    overflow-y: auto;
+
+}
+
+#suggestions .city-list {
+    margin: 0 auto;
+    break-inside: avoid; /* предотвращает перенос элементов на разные колонки */
+    padding: 5px;
+    flex: 0 0 30%; /* Устанавливаем ширину элемента в 50% для двух элементов в ряду */
+}
